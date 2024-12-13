@@ -7,28 +7,36 @@ By applying the XGBoost algorithm with BorutaSHAP feature selection, the model a
 
 Key Features
 Dataset: Cardiotocography dataset from UCI Machine Learning Repository with 2126 records and 22 attributes.
+
 Machine Learning Models:
 Logistic Regression
 Random Forest
 Gaussian Naive Bayes
 Support Vector Classifier (SVC)
 XGBoost Classifier (selected as the best model)
+
 Feature Selection: BorutaSHAP algorithm for improved accuracy and interpretability, especially for minority class classification.
+
 Performance:
 XGBoost Classifier with BorutaSHAP achieves 94% accuracy.
 Balanced F1-scores for all classes, with significant improvements in minority class precision and recall.
+
 Methodology
 Exploratory Data Analysis:
 Analyzed fetal health features such as fetal heart rate, uterine contractions, and variability metrics.
 Identified key correlated features using a correlation heatmap.
+
 Model Development:
 Evaluated multiple classification models using cross-validation.
 Selected XGBoost for its superior accuracy and generalization.
+
 Feature Selection:
 Applied BorutaSHAP to identify critical features like accelerations, prolonged decelerations, and variability metrics.
+
 Evaluation:
 Used metrics such as precision, recall, and F1-score to assess model performance.
 Improved minority class classification with Boruta-enhanced features.
+
 Results
 Accuracy:
 XGBoost without BorutaSHAP: 93%
